@@ -8,8 +8,8 @@ import java.util.GregorianCalendar;
 
 public class DepositCalculator {
     public long calculate(double depositAmount, int termPlacementInMonths, double percent, String dateBegin) throws ParseException {
-        int constantPercentToInt = 1000;
-        int millisInDay = 86400000; // int millisInDay = 1000 (inSec) * 60 (InMin) * 60 (InHour) * 24 (InDay)
+        int constantPercentToInt = 1_000;
+        int millisInDay = 86_400_000;
         double result = 0;
         int daysInLeapYear = 366;
         int daysInNonLeapYear = 365;
